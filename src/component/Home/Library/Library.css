@@ -1,0 +1,22 @@
+.library {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.line {
+    width: 12%;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.button {
+    background: black;
+    color: #fff;
+    outline: none;
+    border-style: none;
+}
