@@ -3,15 +3,9 @@ import ShowFetch from "../../ShowFetch";
 import React, { Component } from 'react';
 
 
-const url = "http://www.omdbapi.com/?i=tt3896198&apikey=d1740373";
+
 class Header extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            video: '',
-        }
-    }
 
 
 
@@ -36,22 +30,34 @@ class Header extends Component {
                         <div className="line"></div>
                         <br />
                     </div>
-                    <ShowFetch getData={this.state.video} />
 
+
+                </div>
+                <div className="right">
+                    <div className="right-content">
+
+                        <input id='inp' type="text" placeholder="search" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <i class="fa-solid fa-microphone"></i>
+                        <div className="icons">
+                            <i class="fa-solid fa-video"></i>
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <br></br>
+                        <hr />
+                    </div>
+                    <div className="right-contents">
+                        <ShowFetch />
+
+                    </div>
                 </div>
 
             </div>
         );
     }
 
-    componentDidMount() {
-        fetch(`${url}`, { method: 'GET' })
-            .then((res) => res.json())
-            .then((data) => {
-                this.setState({ video: data })
-                console.log(data)
-            })
-    }
+
 }
 
 export default Header;

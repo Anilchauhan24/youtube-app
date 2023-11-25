@@ -53,3 +53,79 @@
     background-color: #fff;
     opacity: 0.5;
 }
+
+.right-content {
+    position: relative;
+    text-align: center;
+    bottom: 24vh;
+    /* top: -25vh; */
+
+}
+
+.right-content #inp {
+    width: 35vw;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    height: 5vh;
+    left: 16vw;
+    top: -1vh;
+
+}
+
+.fa-magnifying-glass {
+    color: red;
+    position: absolute;
+    z-index: 1;
+    right: 31vw;
+    cursor: pointer;
+
+}
+
+.fa-microphone {
+    position: absolute;
+    color: red;
+    z-index: 1;
+    right: 28vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.fa-video {
+    position: absolute;
+    color: red;
+    z-index: 1;
+    right: 23vw;
+    font-size: 2vw;
+
+}
+
+.fa-bell {
+    position: absolute;
+    z-index: 1;
+    color: red;
+    right: 16vw;
+    font-size: 1.5vw;
+
+}
+
+.right-contents {
+    position: relative;
+    text-align: center;
+    bottom: 20vh;
+}
+
+.right-content-boxes {
+    position: relative;
+    width: 14vw;
+    height: 40vh;
+    background: red;
+    text-align: center;
+    left: 15vw;
+    border-radius: 10px;
+}
+
+.right-content-boxes img {
+    width: 100%;
+    height: 30vh;
+}

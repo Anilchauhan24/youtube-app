@@ -1,7 +1,6 @@
 import Subscription from "./Library/Subscription/Subscription";
 import "./Home.css";
 import Library from "./Library/Library";
-import Fatal from "../../Fatal";
 import Header from "./Header";
 function Home() {
 
@@ -15,7 +14,6 @@ function Home() {
                 <Library />
                 <Subscription />
 
-                <Fatal />
 
             </div>
         </>
